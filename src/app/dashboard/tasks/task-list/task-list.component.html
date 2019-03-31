@@ -1,0 +1,22 @@
+<div class="task-list-container">
+  <div class="tasks-group">
+    <nav class="row">
+      <ul class="task-items">
+        <li class="row">
+          <div class="col-md-3">Task Name</div>
+          <div class="col-md-2">Issue Type</div>
+          <div class="col-md-2">Dead Line Date</div>
+          <div class="col-md-3">Business Name</div>
+          <div class="col-md-2">Project Life</div>
+        </li>
+        <li *ngFor="let task of taskList;let i=index;" class="row">
+          <div class="col-md-3">{{ task.name || "-" }}</div>
+          <div class="col-md-2">{{ task.issueType || "-" }}</div>
+          <div class="col-md-2">{{ task.projectedDeadlineDate | amDateFormat:'LL' || "-" }}</div>
+          <div class="col-md-3">{{ task.businessName || "-" }}</div>
+          <div class="col-md-2">{{ task.projectedLife || "-" }}</div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

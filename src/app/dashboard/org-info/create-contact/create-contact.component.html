@@ -1,0 +1,92 @@
+<div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form [formGroup]="createContactForm" (submit)="onSubmittedContactForm()">
+                <div class="name-container row">
+                    <div class="col-md-4">Name</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="name-container row">
+                        <div class="col-md-4">BirthDate</div>
+                        <div class="col-md-8">
+                            <input type="text" formControlName="birthDate" placeholder="BirthDate">
+                        </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Account</div>
+                    <div class="col-md-8">
+                        <ng-select formControlName="account" [options]="accountListArray" [noFilter]="10" style="width: 94% !important; border:solid 1px #82D17E">asdadas
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Department</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="department" placeholder="Department">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Description</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="description" placeholder="Description">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Do Not Call</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="doNotCall" />
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Email*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Fax</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="fax" placeholder="Fax" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Home Phone</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="homePhone" placeholder="Home Phone" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Mailing Address</div>
+                    <div class="col-md-8"><input type="text" formControlName="mailingAddress" placeholder="Mailing Address">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Mobile</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="mobile" placeholder="Mobile" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Other Address</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="otherAddress" placeholder="Other Address">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Other Phone</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="otherPhone" placeholder="Other Phone" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Title</div>
+                    <div class="col-md-8"><input type="text" formControlName="title" placeholder="title">
+                    </div>
+                </div>
+                <input type="submit" value="Create Task">
+            </form>
+        </div>
+    </div>
+</div>

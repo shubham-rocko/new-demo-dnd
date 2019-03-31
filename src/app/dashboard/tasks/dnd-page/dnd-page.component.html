@@ -1,0 +1,210 @@
+<div class="ro w">
+  <div class="drag-data">
+    <div class="example-container">
+      <h2>Inbox Straw</h2>
+      <div
+        class="example-list padd80" [dragula]='"parent-bag"' [attr.data-status]="'inbox'">
+        <div *ngFor="let item of inbox;" class="example-box cdk-drag ng-star-inserted" [attr.data-id]="item.taskId">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-labels">
+                  <span
+                    class="card-labels-text card-labels-text__green"
+                    title="test"
+                    >{{item.title}}</span
+                  >
+                </div>
+                <div class="card-title">{{item.description}}</div>
+                <div class="card-badges">{{item.badges}}</div>
+                <div class="card-members">
+                  <ul>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="example-container">
+      <h2>Re-evaluation Needed</h2>
+      <div
+        class="example-list padd80" [dragula]='"parent-bag"' [attr.data-status]="'reevaluation'">
+        <div *ngFor="let item of reevaluation" class="example-box cdk-drag ng-star-inserted" [attr.data-id]="item.taskId">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-labels">
+                  <span
+                    class="card-labels-text card-labels-text__green"
+                    title="test"
+                    >{{item.title}}</span
+                  >
+                </div>
+                <div class="card-title">{{item.description}}</div>
+                <div class="card-badges">{{item.badges}}</div>
+                <div class="card-members">
+                  <ul>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="example-container">
+      <h2>Prospecting</h2>
+      <div
+              class="example-list padd80" [dragula]='"parent-bag"' [attr.data-status]="'prospecting'">
+        <div *ngFor="let item of prospecting" class="example-box cdk-drag ng-star-inserted" [attr.data-id]="item.taskId">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-labels">
+                  <span
+                          class="card-labels-text card-labels-text__green"
+                          title="test"
+                  >{{item.title}}</span
+                  >
+                </div>
+                <div class="card-title">{{item.description}}</div>
+                <div class="card-badges">{{item.badges}}</div>
+                <div class="card-members">
+                  <ul>
+                    <li>
+                      <div class="card-member">
+                        <img
+                                src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card-member">
+                        <img
+                                src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="example-container">
+      <h2>Quoting</h2>
+      <div
+        class="example-list padd80" [dragula]='"parent-bag"' [attr.data-status]="'quoting'">
+        <div *ngFor="let item of quoting;" class="example-box cdk-drag ng-star-inserted" [attr.data-id]="quoting.taskId">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-labels">
+                  <span
+                    class="card-labels-text card-labels-text__green"
+                    title="test"
+                    >{{item.title}}</span
+                  >
+                </div>
+                <div class="card-title">{{item.description}}</div>
+                <div class="card-badges">{{item.badges}}</div>
+                <div class="card-members">
+                  <ul>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card-member">
+                        <img
+                          src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="example-container">
+      <h2>Collecting Medical Questions</h2>
+      <div  
+              class="example-list padd80" [dragula]='"parent-bag"' [attr.data-status]="'collecting'">
+        <div *ngFor="let item of collecting;" class="example-box cdk-drag ng-star-inserted" [attr.data-id]="collecting.taskId">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-labels">
+                  <span
+                          class="card-labels-text card-labels-text__green"
+                          title="test"
+                  >{{item.title}}</span
+                  >
+                </div>
+                <div class="card-title">{{item.description}}</div>
+                <div class="card-badges">{{item.badges}}</div>
+                <div class="card-members">
+                  <ul>
+                    <li>
+                      <div class="card-member">
+                        <img
+                                src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card-member">
+                        <img
+                                src="https://trello-avatars.s3.amazonaws.com/e84bd5ae16effe6d9842563f7e41d93d/50.png"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

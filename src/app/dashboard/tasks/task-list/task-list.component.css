@@ -1,0 +1,34 @@
+.task-list-container{
+
+}
+
+.tasks-group{
+
+}
+
+.row{
+
+}
+
+ul.task-items {
+    width: 100%;
+}
+
+ul.task-items li div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    height: 60px;
+}
+
+ul.task-items li:first-of-type div{
+    background: #e0e0e0;
+    font-weight: bold;
+}
+
+.col{
+    align-self: center;
+    flex: 1;
+}

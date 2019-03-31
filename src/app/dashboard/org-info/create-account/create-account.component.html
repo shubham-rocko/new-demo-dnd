@@ -1,0 +1,62 @@
+<div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form [formGroup]="createTaskForm" (submit)="taskCreated()">
+                <div class="name-container row">
+                    <div class="col-md-4">Name*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="name" placeholder="name">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Annual Revenue</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="annualRevenue" placeholder="Annual Revenue">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Billing Address</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="billingAddress" placeholder="Billing Address">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Fax</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="fax" placeholder="Fax">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Industry</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="industry" placeholder="Industry"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Phone</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="phone" placeholder="Phone" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Shipping Address</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="shippingAddress" placeholder="Shipping Address">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Website</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="website" placeholder="Website">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Year Started</div>
+                    <div class="col-md-8"><input type="text" formControlName="yearStarted" placeholder="Year Started">
+                    </div>
+                </div>
+                <input type="submit" value="Create Task">
+            </form>
+        </div>
+    </div>
+</div>

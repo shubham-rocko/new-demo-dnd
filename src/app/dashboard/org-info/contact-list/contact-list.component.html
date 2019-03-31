@@ -1,0 +1,22 @@
+<div class="task-list-container">
+  <div class="tasks-group">
+    <nav class="row">
+      <ul class="task-items">
+        <li class="row">
+          <div class="col-md-3">Contact Name</div>
+          <div class="col-md-2">Department</div>
+          <div class="col-md-2">Created On</div>
+          <div class="col-md-3">Mobile</div>
+          <div class="col-md-2">Mailing Address</div>
+        </li>
+        <li *ngFor="let contact of contactList;let i=index;" class="row">
+          <div class="col-md-3">{{ contact.name || "-" }}</div>
+          <div class="col-md-2">{{ contact.department || "-" }}</div>
+          <div class="col-md-2">{{ contact.created | amDateFormat:'LL' || "-" }}</div>
+          <div class="col-md-3">{{ contact.mobile || "-" }}</div>
+          <div class="col-md-2">{{ contact.mailingAddress || "-" }}</div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,307 @@
+<div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form [formGroup]="createTaskForm" (submit)="taskCreated()">
+                <div class="name-container row">
+                    <div class="col-md-4">Name*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Issue Type*</div>
+                    <div class="col-md-8">
+                        <ng-select
+                                formControlName="issueType"
+                                [options]="issueTypeArray" [noFilter]="10"
+                                style="width: 94% !important; border:solid 1px #82D17E">asdadas
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Assisting Agent*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="assistingAgent"
+                               placeholder="Assisting Agent">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Broker*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="broker" placeholder="Broker">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Aflac</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="aflac"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Aflac Group Number*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="aflacGroupNumber"
+                               placeholder="Aflac Group Number" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Sic Code*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="sicCode"
+                               placeholder="Sic Code" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Employee Count*</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="employeeCount"
+                               placeholder="Employee Count" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Business Name*</div>
+                    <div class="col-md-8"><input type="text" formControlName="businessName" placeholder="Business Name">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Address</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="address" placeholder="Address">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">State</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="state" placeholder="State">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">City</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="city" placeholder="City">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Country</div>
+                    <div class="col-md-8"><input type="text" formControlName="country" placeholder="Country">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Zip Code</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="zipCode"
+                               placeholder="Zip Code" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Contact Name</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="contactName" placeholder="Contact Name">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Contact Phone</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="contactPhone"
+                               placeholder="Contact Phone" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Contact Email</div>
+                    <div class="col-md-8">
+                        <input type="email" formControlName="contactEmail" placeholder="Contact Email">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Employer Tax Id</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="employerTaxId"
+                               placeholder="Employer Tax Id" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Other Service</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="otherService" placeholder="Other Service">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Medical</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedMedical"
+                               placeholder="Projected Medical" NoDecimal="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Medical Compensation Percentage</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="medicalCompensationPercentage"
+                               placeholder="Medical Compensation Percentage" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Major Medical Commissions</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedMajorMedicalCommissions"
+                               placeholder="Projected Major Medical Commissions" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Life</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedLife" placeholder="Projected Life">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Life Compensation Percentage</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="lifeCompensationPercentage"
+                               placeholder="Life Compensation Percentage" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Life Commissions</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedLifeCommissions"
+                               placeholder="Projected Life Commissions" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Total Commissions</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedTotalCommissions"
+                               placeholder="Projected Total Commissions" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Total Monthly Deposits</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="projectedTotalMonthlyDeposits"
+                               placeholder="Projected Total Monthly Deposits" OnlyNumber="true">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Credit And Debit Vendor Audit</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="creditAndDebitVendorAudit"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Enrollment Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="enrollmentModel" formControlName="enrollmentDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp1="ngx-mydatepicker">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn calender-btn" (click)="dp1.toggleCalendar()">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Final Presentation Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="finalPresentationModel" formControlName="finalPresentationDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp2="ngx-mydatepicker">
+                         <span class="input-group-btn">
+                        <button type="button" class="btn calender-btn" (click)="dp2.toggleCalendar()">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Group Vision And Dental</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="groupVisionAndDental" placeholder="yyyy-mm-dd">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Guaranteed Issue Life</div>
+                    <div class="col-md-8">
+                        <input type="text" formControlName="guaranteedIssueLife" placeholder="yyyy-mm-dd">
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Initial Presentation Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="initialPresentationModel" formControlName="initialPresentationDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp3="ngx-mydatepicker">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn calender-btn" (click)="dp3.toggleCalendar()">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Initial Quote Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="quoteModel" formControlName="initialQuoteDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp4="ngx-mydatepicker">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn calender-btn" (click)="dp4.toggleCalendar()">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Major Medical</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="majorMedical"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Deadline Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="deadlineModel" formControlName="projectedDeadlineDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp5="ngx-mydatepicker">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn calender-btn" (click)="dp5.toggleCalendar()">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4">Projected Effective Date</div>
+                    <div class="col-md-8 date-picker-box">
+                        <input type="text" [(ngModel)]="effectiveModel" formControlName="projectedEffectiveDate" placeholder="yyyy-mm-dd"
+                               ngx-mydatepicker
+                               [options]="myOptions" (dateChanged)="onDateChanged($event)" #dp6="ngx-mydatepicker">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn calender-btn" (click)="dp6.toggleCalendar()">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Shop Workmans Comp</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="shopWorkmansComp"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Workmans Comp Audit</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="workmansCompAudit"/>
+                    </div>
+                </div>
+                <div class="name-container row">
+                    <div class="col-md-4 app-checkbox beta">Wotc Platform</div>
+                    <div class="col-md-8">
+                        <input type="checkbox" formControlName="wotcPlatform"/>
+                    </div>
+                </div>
+                <input type="submit" value="Create Task">
+            </form>
+        </div>
+    </div>
+</div>

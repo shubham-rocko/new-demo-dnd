@@ -1,0 +1,22 @@
+ul.sidebar-items li {
+    padding: 20px;
+    width: 100%;
+}
+
+ul.sidebar-items li a {
+    color: black;
+    padding: 10px;
+}
+
+ul.sidebar-items li a:hover {
+    text-decoration: none;
+}
+
+ul.sidebar-items li a i {
+    font-size: 20px;
+}
+
+.active-link {
+    background-color: #82D17E;
+    color: #ffffff !important;
+}

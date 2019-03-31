@@ -1,0 +1,23 @@
+.tab-bar-gutter{
+    height: 45px;
+}
+
+.tab-gutter{
+    height: inherit;
+}
+
+.tab-btn-container{
+    text-align: center;
+    padding: 10px 30px;
+    background: #bdbbbb;
+    cursor: pointer;
+}
+
+.tab-btn-container a{
+    color: #333598;
+}
+
+.active-link {
+    background-color: #82D17E;
+    color: #ffffff !important;
+}
