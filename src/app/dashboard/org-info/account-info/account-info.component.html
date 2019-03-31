@@ -1,0 +1,22 @@
+<div class="task-list-container">
+  <div class="tasks-group">
+    <nav class="row">
+      <ul class="task-items">
+        <li class="row">
+          <div class="col-md-3">Account Name</div>
+          <div class="col-md-2">Industry</div>
+          <div class="col-md-2">Year Started</div>
+          <div class="col-md-3">Website</div>
+          <div class="col-md-2">Shipping Address</div>
+        </li>
+        <li *ngFor="let account of accountInformation;let i=index;" class="row">
+          <div class="col-md-3">{{ account.name || "-" }}</div>
+          <div class="col-md-2">{{ account.industry || "-" }}</div>
+          <div class="col-md-2">{{ account.yearStarted | amDateFormat:'LL' || "-" }}</div>
+          <div class="col-md-3">{{ account.website || "-" }}</div>
+          <div class="col-md-2">{{ account.shippingAddress || "-" }}</div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

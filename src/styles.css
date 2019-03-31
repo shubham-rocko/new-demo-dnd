@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+    line-height: normal;
+  }
+  
+  ul.nav li {
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #494949;
+  }
+  
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track {
+    background-color: inherit;
+  }
+  
+
+  ul.task-items li{
+    line-height: normal;
+  }
